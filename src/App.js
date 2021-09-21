@@ -11,7 +11,6 @@ import {Weather} from "./components/Weather/Weather";
 const API_KEY = '00b3309eefd24ede5ef63486261606b0'
 const axios = require('axios');
 
-
 function App() {
     const [city, setCity] = useState()
     const [weather, setWeather] = useState()

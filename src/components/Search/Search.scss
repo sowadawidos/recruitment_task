@@ -19,6 +19,9 @@
     font-size: 25px;
     font-family: $font-base;
     padding-left: 20px;
+    &::placeholder {
+      color: $color-lightgrey;
+    }
   }
   .search__button {
     position: absolute;

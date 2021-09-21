@@ -1,0 +1,22 @@
+@import "src/scss/main";
+
+.weather__long-term-day {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  .weather__long-term-day-name {
+    font-size: 35px;
+    color: $color-white;
+    font-family: $font-base;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .weather__long-term-day-temperature {
+    font-size: 30px;
+    color: $color-white;
+    font-family: $font-base;
+    font-weight: 600;
+  }
+}

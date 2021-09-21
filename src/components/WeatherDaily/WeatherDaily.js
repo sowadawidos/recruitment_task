@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react"
 
+import "./WeatherDaily.scss"
+
 export const WeatherDaily = ({day, key, temp}) => {
     const date = new Date(day * 1000).toLocaleString('en-US', {weekday: 'long'})
     const hours = new Date(day * 1000).toLocaleString('en-US', {hour: "numeric"})

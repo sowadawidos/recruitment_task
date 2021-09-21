@@ -19,7 +19,7 @@ export const Search = ({getNameOfCity}) => {
             <div className="home__search">
                 <form>
                     <label>
-                        <input type="text" onChange={handleInput}/>
+                        <input type="text" onChange={handleInput} placeholder="Type your city name:"/>
                         <Link to="/weather">
                             <button className="search__button" onClick={handleButton}>
                                 <img src={search} alt="search"/>
