@@ -3,17 +3,30 @@ import React, { useState, useEffect } from "react"
 import search from "./search.svg"
 
 import "./Search.scss"
+import {Link} from "react-router-dom";
 
-export const Search = () => {
+export const Search = ({getNameOfCity}) => {
+    const [input, setInput] = useState()
+
+    const handleInput = e => {
+        setInput(e.target.value)
+    }
+    const handleButton = () => {
+        getNameOfCity(input)
+    }
     return (
         <>
             <div className="home__search">
-                <label>
-                    <input type="text"/>
-                    <button className="search__button">
-                        <img src={search} alt="search"/>
-                    </button>
-                </label>
+                <form>
+                    <label>
+                        <input type="text" onChange={handleInput}/>
+                        <Link to="/weather">
+                            <button className="search__button" onClick={handleButton}>
+                                <img src={search} alt="search"/>
+                            </button>
+                        </Link>
+                    </label>
+                </form>
             </div>
         </>
     )
