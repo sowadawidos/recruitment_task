@@ -1,0 +1,41 @@
+@import "src/scss/main";
+
+.home__search {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  input {
+    width: 450px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(255,255,255, 0.7);
+    font-size: 25px;
+    font-family: $font-base;
+    padding-left: 20px;
+  }
+  .search__button {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    img {
+      width: 20px;
+      height: 20px;
+      transform: scale(1.00);
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+  }
+}

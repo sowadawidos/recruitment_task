@@ -1,0 +1,14 @@
+@import "reset";
+@import "settings/colors";
+@import "settings/fonts";
+
+* {
+  box-sizing: border-box;
+}
+#root {
+  font-family: $font-base;
+}
+body {
+  background: rgb(195,209,224);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(207,231,231,1) 50%, rgb(91, 143, 183) 100%);
+}
