@@ -14,7 +14,7 @@ export const WeatherDaily = ({day, key, temp, temp_min, temp_max, weather}) => {
                     </div>
                     <div className="weather__long-term-day-temperature">
                         {(parseFloat(temp) - 273.15).toFixed(0)}&deg;C
-                        { logo && <img src={logo} alt=""/>}
+                        {logo && <img src={logo} alt=""/>}
                     </div>
                 </div>
                 <div className="weather__long-term-day-average-box">

@@ -16,7 +16,7 @@ export const Weather = ({weather}) => {
                                 !weather &&
                                 <>
                                     <div className="weather__loading">
-                                        <ReactLoading type='spin' color="#ffffff" height={50} width={50} />
+                                        <ReactLoading type='spin' color="#ffffff" height={50} width={50}/>
                                     </div>
                                 </>
 

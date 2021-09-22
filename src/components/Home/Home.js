@@ -11,9 +11,9 @@ export const Home = ({getNameOfCity}) => {
                 <div className="container">
                     <Fade bottom>
                         <div className="home__box">
-                                <h1 className="home__box-title">
-                                    Welcome to Weather App
-                                </h1>
+                            <h1 className="home__box-title">
+                                Welcome to Weather App
+                            </h1>
                             <Search getNameOfCity={getNameOfCity}/>
                         </div>
                     </Fade>

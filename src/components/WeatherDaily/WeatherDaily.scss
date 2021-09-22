@@ -62,6 +62,12 @@
     align-items: center;
     margin: 5px 0 5px 0;
     width: 350px;
+    .weather__long-term-day-temperature {
+      margin-bottom: 5px;
+    }
+    .weather__long-term-day-name {
+      margin-bottom: 5px;
+    }
     .weather__long-term-day-box {
       margin-right: 25px;
     }

@@ -10,7 +10,11 @@ export const WeatherLongTerm = ({weather}) => {
         <>
             <div className="weather__long-term">
                 {
-                    fiveDaysWeatherFiltered.map((element, key) => <WeatherDaily day={element.dt} key={key} temp={element.main.temp} temp_min={element.main.temp_min} temp_max={element.main.temp_max} weather={element}/>)
+                    fiveDaysWeatherFiltered.map((element, key) => <WeatherDaily day={element.dt} key={key}
+                                                                                temp={element.main.temp}
+                                                                                temp_min={element.main.temp_min}
+                                                                                temp_max={element.main.temp_max}
+                                                                                weather={element}/>)
                 }
             </div>
         </>
