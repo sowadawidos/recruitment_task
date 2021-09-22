@@ -4,5 +4,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1280px) {
+  .weather__long-term {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 880px) {
+  .weather__long-term {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
 }

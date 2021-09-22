@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 25px;
+  text-align: center;
   .weather__long-term-day-name {
     font-size: 35px;
     color: $color-white;
@@ -18,5 +18,52 @@
     color: $color-white;
     font-family: $font-base;
     font-weight: 600;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      padding: 2px;
+    }
+  }
+  .weather__long-term-day-average {
+    font-size: 20px;
+    color: $color-white;
+    font-family: $font-base;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1280px) {
+  .weather__long-term-day {
+    margin: 10px;
+    .weather__long-term-day-name {
+      font-size: 25px;
+    }
+    .weather__long-term-day-temperature {
+      font-size: 20px;
+    }
+    .weather__long-term-day-average {
+      font-size: 17px;
+      margin-bottom: 2px;
+    }
+  }
+}
+@media (max-width: 880px) {
+  .weather__long-term-day {
+    margin: 5px 20px 5px 20px
+  }
+}
+
+@media (max-width: 650px) {
+  .weather__long-term-day {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px 0 5px 0;
+    width: 350px;
+    .weather__long-term-day-box {
+      margin-right: 25px;
+    }
   }
 }
