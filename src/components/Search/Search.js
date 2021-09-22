@@ -10,7 +10,7 @@ export const Search = ({getNameOfCity}) => {
     const [input, setInput] = useState('')
     const [error, setError] = useState()
     const handleInput = e => {
-        setInput(e.target.value)
+        setInput((e.target.value).trim())
     }
     const handleButton = event => {
         if (input.length === 0) {
